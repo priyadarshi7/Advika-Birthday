@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+@keyframes flash{
+    0%{color:rgb(255, 0, 255);}
+    25%{color:rgb(72, 0, 255);}
+    50%{
+        color:rgb(0, 255, 119);
+    }
+    75%{
+        color:rgb(72, 0, 255);
+    }
+    100%{
+        color:rgb(255, 0, 255);
+    }
+}
+.anshu{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 40px;
+    animation:flash 2s linear 0s infinite normal;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@keyframes fly{
+from{bottom:0px};
+to{top:800px};
+
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.lastu{
+    height:600px;
+    width:600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-left:80px;
+}
+@media(max-width:500px){
+    .lastu{
+        height:400px;
+        width:280px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 28px;
+        margin-top:40px;
+    }
+    .anshu{
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color:white;
+        font-size: 20px;
+        animation:flash 2s linear 0s infinite normal;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
